@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >BWA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-['Plus Jakarta Sans'] ">
+    <!-- nav dan hero -->
+    <section class="bg-[#E1D4ED]">
+         <!-- navbar -->
+        <nav
+        class="flex flex-row max-w-6xl mx-auto justify-between items-center pt-10 pb-12 font-['Plus Jakarta Sans']">
+    <svg width="149" height="55" viewBox="0 0 149 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18.375 19.0625C18.375 23.7224 14.5974 27.5 9.9375 27.5H1.5V19.0625C1.5 14.4026 5.27759 10.625 9.9375 10.625C14.5974 10.625 18.375 14.4026 18.375 19.0625Z" fill="#762BEB"/>
+        <path d="M18.375 35.9375C18.375 31.2776 22.1526 27.5 26.8125 27.5H35.25V35.9375C35.25 40.5974 31.4724 44.375 26.8125 44.375C22.1526 44.375 18.375 40.5974 18.375 35.9375Z" fill="#762BEB"/>
+        <path d="M1.5 35.9375C1.5 40.5974 5.27759 44.375 9.9375 44.375H18.375V35.9375C18.375 31.2776 14.5974 27.5 9.9375 27.5C5.27759 27.5 1.5 31.2776 1.5 35.9375Z" fill="#762BEB"/>
+        <path d="M35.25 19.0625C35.25 14.4026 31.4724 10.625 26.8125 10.625H18.375V19.0625C18.375 23.7224 22.1526 27.5 26.8125 27.5C31.4724 27.5 35.25 23.7224 35.25 19.0625Z" fill="#762BEB"/>
+        <path d="M50.47 27.32L45.11 16.2H52.47L56.15 25.16L59.95 16.2H67.11L61.83 27.32L67.47 39.04H60.11L56.15 29.36L52.07 39.04H44.67L50.47 27.32ZM69.4463 16.2H76.6463V39H69.4463V16.2ZM87.3753 29.8V39H80.6953V16.2H87.4553L93.4953 25.4C94.402 26.76 95.0953 27.9067 95.5753 28.84H95.6953V25V16.2H102.335V39H95.5353L89.3353 29.4L87.5353 26.68H87.4153L87.3753 29.8ZM106.201 16.2H113.401V33.72H122.721V39H106.201V16.2ZM125.345 16.2H132.545V39H125.345V16.2Z" fill="#020014"/>
+        </svg>
+        
+
+        <div
+        class="nav-links md:static absolute md:mi-h-fit left-0 top-[-100%] md:w-auto w-full flex items-center px-5 font-['Poppins]"
+        >
+        <ul class="flex md:flex-row flex-col md:tems-center md:gap-x-7 gap-8 font-['Plus Jakarta Sans']">
+            <li>
+            <a
+                href=""
+                class="text-[16px] text-[#020014] hover:font-semibold hover:text-violet-700"
+            >
+                Features
+            </a>
+            </li>
+
+            <li>
+            <a
+                href=""
+                class="text-[16px] text-[#020014] hover:font-semibold hover:text-violet-700"
+            >
+                Pricing
+            </a>
+            </li>
+
+            <li>
+            <a
+                href=""
+                class="text-[16px] text-[#020014] hover:font-semibold hover:text-violet-700"
+            >
+                Docs
+            </a>
+            </li>
+
+            <li>
+            <a
+                href=""
+                class="text-[16px] text-[#020014] hover:font-semibold hover:text-violet-700"
+            >
+            Showcase
+            </a>
+            </li>
+
+            <li>
+            <a
+                href=""
+                class="text-[16px] text-[#020014]  hover:font-semibold hover:text-violet-700"
+            >
+                Blog
+            </a>
+            </li>
+        </ul>
+        </div>
+
+        <div class="flex flex-row items-center gap-x-6 bg-[#E1D4ED]">
+        <div class="md:w-fit  rounded-full p-[5px] flex items-center">
+        <a href="" class="text-[16px] text[#020014] ">
+            Sig In
+        </a>
+            
+        </div>
+        <a
+            href="login.html"
+            class="hover:bg-violet-700 bg-[#762BEB] text-white rounded-lg font-semibold px-4 md:px-8 py-2 md:py-3 text-sm md:text-sm lg:text-sm xl:text-base" style="border-width: 1px 4px 4px 1px; border-style: solid; border-color: black;"
+        >
+            Sign Up
+        </a>
+        <!-- <svg id="menu"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 4H21V6H3V4ZM3 19H21V21H3V19ZM3 14H21V16H3V14ZM3 9H21V11H3V9Z" fill="black"/>
+            </svg>
+            -->
+        <ion-icon
+            onclick="onToggleMenu(this)"
+            class="text-3xl cursor-pointer md:hidden"
+            name="menu"
+        ></ion-icon>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero  -->
+        <section class="hero max-w-6xl mx-auto py-12 px-5">
+            <div
+            class="flex flex-col gap-y-10 md:flex-row items-center justify-between"
+            >
+            <div class="flex flex-col gap-y-10 md:basis-2/4 lg:basis-3/6 ">
+                <div class="flex gap-y-5 flex-col">
+                <h1
+                    class="text-[#020014] font-semibold font-['Plus Jakarta Sans'] text-4xl lg:text-[70px] leading-none"
+                >
+                Explore Business
+                Insights Analytics
+                </h1>
+                <p class="text-[18px] md:text-base leading-loose text-[#65636B  ]">
+                    Make a better decision based on what your customer needs
+                    without compromising your business value propositions.
+                </p>
+                <div class="flex flex-row gap-x-5 items-center">
+                   <div class="w-[108px] h-[40px] flex flex-row">
+                    <img src="img/image 6 (1).png" alt="" class="rounded-photo relative" style="z-index: 0; top: 0; left: 0; ">
+                    <img src="img/image 6 (3).png" alt="" class="rounded-photo" style="z-index: 10; top: 10px; left: 10px;">
+                    <img src="img/image 6 (2).png" alt="" class="rounded-photo" style="z-index: 20; top: 20px; left: 20px;">            
+                   </div>
+                    <h3 class="text-[16px] text-[#65636B] ">
+                        Join 28K global founders    
+                    </h3>
+                </div>
+                </div>
+    
+                <div class="flex flex-col gap-y-8 lg:flex-row gap-x-4 items-center font-['Plus Jakarta Sans'] ">
+                    <a
+                    href=""
+                    class="w-full text-center lg:w-fit text-[20px] hover:bg-indigo-950 text-base bg-violet-700 text-white py-4 rounded-lg font-semibold px-10" style="border-width: 1px 4px 4px 1px; border-style: solid; border-color: black;"
+                >
+                    Try Free trial
+                </a>
+                  
+                <a
+                href=""
+                class="w-full text-center lg:w-fit text-[20px] hover:bg-indigo-950 text-base bg-white  py-4 rounded-lg font-semibold px-10" style="border-width: 1px 4px 4px 1px; border-style: solid; border-color: black;"
+            >
+             Call Sales
+            </a>
+                </div>
+            </div>
+            <div class="w-[500px] h-[530px] bg-[#FFFFFF] rounded-[50px]" style="border-width: 1px 6px 6px  1px; border-style: solid; border-color: black;">
+                <img
+                src="images/ilustration-header.png"
+                alt=""
+                class="h-[360px] lg:h-[550px] md:basis-2/4"
+                />
+            </div>
+            </div>
+        </section>
+    <!-- hero end -->
+    
+    </section>
+      <!-- nav dan hero -->
+
+        <!-- integrations -->
+    <section class="font-['Plus Jakarta Sans'] w-[1400px] h-[448px]  fixed-element">
+        <div class="flex flex-col  gap-7 pt-12">
+            <h1 class="text-[46px] text-center font-bold">
+                All Integrations Available
+            </h1>
+            <div class="flex gap-x-10 ">
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/Firebase.png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/Group 5.png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/image 161.png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/Jira (1).png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/Jira (1).png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>            
+             </div>
+        <div class="flex flex-row gap-x-10 justify-center">
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/image 115.png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/Firebase.png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/Group 5.png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>
+            <div class="flex flex-row w-[248px] h-[95px] rounded-[16px] gap-3.5 p-5 garis"
+               
+            >
+                <img src="img/figma/Logo Assets.png" alt="" class="gambar">
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-[22px]">
+                        Figma
+                    </h3>
+                    <h3 class="text-[18px] text-[#65636B]">
+                        Design Software
+                    </h3>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+    <!-- integrations -->
+
+    <!-- system -->
+    <section class="system max-w-6xl mx-auto pt-10 ">
+        <div
+        class="flex flex-col gap-24 md:flex-row items-center justify-between pt-12"
+        >
+        <img
+        src="img/system/Group 1 (1).png "
+        alt=""
+        class="h-[360px] lg:h-[550px] md:basis-2/4"
+        />
+       
+        <div class="ai md:basis-2/4 lg:basis-3/6 ">
+            <div class="flex flex-col gap-[30px] ">
+            <h1
+                class="text-[#020014] font-semibold font-['Plus Jakarta Sans'] text-4xl lg:text-[46px] leading-none"
+            >
+            AI-Powered System
+            </h1>
+            <p class="text-[18px] md:text-base leading-loose text-[#65636B]">
+                Make a better decision based on what your customer needs
+                without compromising your business value propositions.
+            </p>
+          
+            </div>
+
+            <div class="flex flex-col gap-[40px] pt-12 items-center">
+                <div class="flex flex-row gap-[16px] "
+               
+                >
+                    <img src="img/system/Frame 9.png " alt="" class="G-system">
+                    <div class="flex flex-col gap-[12px]">
+                        <h3 class="font-bold text-[20px] text-[#0B0A2F]">
+                            Digital Marketing
+                        </h3>
+                        <h3 class="text-[16px] text-[#65636B]">
+                            Make a better decision based on what your customer needs without compromising.
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-[16px] "
+               
+                >
+                    <img src="img/system/Frame 9 (1).png " alt="" class="G-system">
+                    <div class="flex flex-col gap-[12px]">
+                        <h3 class="font-bold text-[20px] text-[#0B0A2F]">
+                            Digital Marketing
+                        </h3>
+                        <h3 class="text-[16px] text-[#65636B]">
+                            Make a better decision based on what your customer needs without compromising.
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-[16px] "
+               
+                >
+                    <img src="img/system/Frame 9 (2).png " alt="" class="G-system">
+                    <div class="flex flex-col gap-[12px]">
+                        <h3 class="font-bold text-[20px] text-[#0B0A2F]">
+                            Digital Marketing
+                        </h3>
+                        <h3 class="text-[16px] text-[#65636B]">
+                            Make a better decision based on what your customer needs without compromising.
+                        </h3>
+                    </div>
+                </div>
+                </div>
+         
+        </div>
+       
+        </div>
+    </section>
+    <!-- system -->
+
+
+    <!-- built -->
+    <section>
+        <div class="flex flex-col px-[150px]">
+            <div class="flex flex-col gap-[20px] text-center pt-10 ">
+                <h1 class="text-[46px] text-[#0B0A2F] font-semibold">
+                    Built For Business
+                </h1>
+                <h3 class="text-[18px] text-[#65636B]">
+                    Make a better decision based on what your customer needs <br>
+                        without compromising your business value propositions.
+                </h3>
+            </div>
+            <div class="build pt-10 flex flex-row">
+                <div class="build1 flex flex-col">
+                    <div class="rounded-[50px] garis w-[239px] h-[280px]">
+                    </div>
+                    <h3 class="text-[20px] text-[#0B0A2F] font-bold">
+                        Digital Marketing
+                    </h3>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                </div>
+                <div class="build1 flex flex-col">
+                    <div class="rounded-[50px] garis w-[239px] h-[280px]">
+                    </div>
+                    <h3 class="text-[20px] text-[#0B0A2F] font-bold">
+                        Digital Marketing
+                    </h3>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                </div>
+                <div class="build1 flex flex-col">
+                    <div class="rounded-[50px] garis w-[239px] h-[280px]">
+                    </div>
+                    <h3 class="text-[20px] text-[#0B0A2F] font-bold">
+                        Digital Marketing
+                    </h3>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                    <div class="flex gap-1">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#0B0A2F"/>
+                            <path d="M13.225 19.475C12.975 19.475 12.7375 19.375 12.5625 19.2L9.02499 15.6625C8.66249 15.3 8.66249 14.7 9.02499 14.3375C9.38749 13.975 9.98749 13.975 10.35 14.3375L13.225 17.2125L19.65 10.7875C20.0125 10.425 20.6125 10.425 20.975 10.7875C21.3375 11.15 21.3375 11.75 20.975 12.1125L13.8875 19.2C13.7125 19.375 13.475 19.475 13.225 19.475Z" fill="white"/>
+                            </svg>
+                        <h3 class="text-[18px] text-[#0B0A2F]">
+                            Remarkable charts manage
+                        </h3>                            
+                    </div>
+                </div>  
+            </div>
+        </div>
+         
+    </section>
+
+    <!-- built -->
+   
+</body>
+</html>

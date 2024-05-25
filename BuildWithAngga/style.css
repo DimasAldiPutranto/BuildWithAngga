@@ -1,0 +1,107 @@
+body{
+height: 2903px;
+
+}
+
+.my-element {
+    border-width: 1px 4px 4px 1px; 
+    border-style: solid; 
+    border-color: black;
+  }
+  
+  .trial{
+    width: 200px;
+  height: 69px;
+  padding: 22px 40px;
+  gap: 10px;
+  border-radius: 12px 0 0 0;
+  border-width: 1px 4px 4px 1px;
+  border-style: solid;
+  border-color: black;
+  opacity: 0; 
+  }
+
+  .container{
+    position: relative;
+    width: 100px; /* Sesuaikan dengan lebar kontainer yang diinginkan */
+    height: 100px; /* Sesuaikan dengan tinggi kontainer yang diinginkan */
+  }
+
+  .rounded-photo {
+    border-radius: 50%; 
+    border: 2px solid white; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto; 
+    opacity: 1;
+  }
+
+  .photo-1 {
+    z-index: 0;
+    left: 0;
+  }
+  .photo-2 {
+    z-index: 10;
+    left: 20px;
+  }
+  .photo-3 {
+    z-index: 20;
+    left: 40px;
+  }
+
+  .garis{
+    border-width: 1px 4px 4px 1px; 
+    border-style: solid; 
+    border-color: black;
+    
+  }
+
+  .gambar{
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .fixed-element {
+    width: 1360px;
+    height: 448px;
+    /* position: fixed; */
+    top: 857px;
+    padding: 70px 0;
+    gap: 30px;
+    /* opacity: 0; */
+  }
+  
+  .system{
+    width: 1280px; /* Lebar tetap 1280px */
+    height: 730.25px; /* Tinggi tetap 730.25px */
+    /* position: fixed; */
+    top: 1347px; /* Jarak dari atas 1347px */
+    padding: 70px 75px; /* Padding atas-bawah 70px, kiri-kanan 75px */
+    gap: 100px; /* Jarak antar elemen 100px */
+
+  }
+  .ai{
+    width: 508px;
+    height: 581px;
+    gap: 50px;
+  }
+
+  .G-system{
+    width: 80px;
+    height: 80px;
+  }
+
+  .build{
+    width: 1130px;
+    height: 485px;
+    justify: space-between;
+  }
+
+  .build1{
+    width: 376.67px;
+    height: 485px;
+    gap: 30px;
+
+
+  }
